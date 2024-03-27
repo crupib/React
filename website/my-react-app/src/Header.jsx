@@ -10,6 +10,7 @@ function Header(){
                     <li>Contact</li>
                 </ul>
             </nav>
+            <hr></hr>
         </Header>
     )
 
