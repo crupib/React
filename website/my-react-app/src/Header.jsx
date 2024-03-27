@@ -10,7 +10,8 @@ function Header()
       <li><a href="#">Services</a></li>
       <li><a href="#">Contact</a></li>
     </ul>
-   </nav> 
+   </nav>
+   <hr></hr> 
  </header>  
   );
 
