@@ -1,10 +1,11 @@
-function Card() {
+import profilePic from './assets/download.jpeg'
+function Card(){
     return (
         <div className="card">
-            <img></img>
-            <h2>Bill</h2>
-            <p>I am a homo and like transgender whores</p>
+            <img className="card-image" src={profilePic} alt="profile picture"></img>
+            <h2 className="card-title">Bill</h2>
+            <p className="card-text">Devops and coder</p>
         </div>
     );
 }
-export function Card
+export default Card;
