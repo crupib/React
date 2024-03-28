@@ -6,7 +6,9 @@
   margin: 10px;
   text-align: center;
   max-width: 250px;
-  display: flex;
+  
+  display: inline-block; /*flex*/
+  place-content: center;
 
 }
 .card .card-image {
