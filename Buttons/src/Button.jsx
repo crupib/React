@@ -7,6 +7,6 @@ function Button() {
             border: "none",
             cursor: "pointer",
         } 
-    return(<button className={styles}>Click me</button>)
+    return(<button style={styles}>Click me</button>)
 }
 export default Button
