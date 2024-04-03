@@ -12,8 +12,8 @@ function App() {
                     {id:10, name: "broccoli", calories:50}];
   return (
     <>
-    <List items={fruits} category="Fruits"/>
-    <List items={vegetables} category="Vegetables"/>
+    {fruits.length > 0 ? <List items={fruits} category="Fruits"/> : null}
+    {vegetables.length > 0 && <List items={vegetables} category="Vegetables"/>}
     </>
   )
 }
