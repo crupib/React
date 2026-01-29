@@ -1,0 +1,31 @@
+#!/usr/bin/env sh
+
+# Do not exit on errors
+set +e
+
+BASE="."
+
+# Directories
+mkdir -p \
+  "$BASE/backend/scripts" \
+  "$BASE/frontend/src"
+
+# Backend files
+touch \
+  "$BASE/backend/package.json" \
+  "$BASE/backend/server.js" \
+  "$BASE/backend/scripts/runme.sh"
+
+# Frontend files
+touch \
+  "$BASE/frontend/package.json" \
+  "$BASE/frontend/vite.config.js" \
+  "$BASE/frontend/index.html" \
+  "$BASE/frontend/src/main.jsx" \
+  "$BASE/frontend/src/App.jsx"
+
+# Make runme.sh executable (ignore errors)
+chmod +x "$BASE/backend/scripts/runme.sh" 2>/dev/null
+
+exit 0
+
