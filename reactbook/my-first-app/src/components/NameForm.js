@@ -4,6 +4,7 @@ function NameForm() {
  const [age, setAge] = useState('');
  return (
    <div>
+    <h3>Name</h3>
     <input
      type="text"
      value={name}
@@ -11,6 +12,7 @@ function NameForm() {
      />
     <br/>
     <br/>
+    <h3>Age</h3>
     <input
      type="text"
      value={age}

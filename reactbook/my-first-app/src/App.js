@@ -11,27 +11,31 @@ import FormExample from './components/FormExample.js';
 function App() {
   return (
     <div>
-	<h1>Main App Component</h1>
-	<Welcome />
+      <div className="main-content">
+        <h1>Main App Component</h1>
+        <Welcome />
         <UserCard name="Alice" />
         <UserCard name="Bob" />
         <Button label="Submit" onClick={() => console.log('Submitted')} />
-        <br/>
-        <br/>
+        <br />
+        <br />
         <Button label="Cancel" onClick={() => console.log('Cancelled')} />
-        <br/>
-        <Counter />
-        <br/>
-        <br/>
+      </div>
+
+      <Counter />
+
+      <div className="main-content">
+        <br />
+        <br />
         <NameForm />
-        <br/>
-        <br/>
+        <br />
+        <br />
         <ClickExample />
-        <br/>
-        <br/>
+        <br />
+        <br />
         <FormExample />
+      </div>
     </div>
   );
 }
-
 export default App;
